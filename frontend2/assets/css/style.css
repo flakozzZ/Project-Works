@@ -1,0 +1,699 @@
+@font-face {
+    font-family: Avenir Next Cyr;
+    src: url(../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot) format('eot'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf) format('ttf'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff) format('woff'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Light.eot) format('eot'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf) format('ttf'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Light.woff) format('woff'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot) format('eot'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf) format('ttf'),
+         url(../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff) format('woff');
+        
+}
+
+@font-face {
+    font-family: Gotham Pro;
+    src: url(../fonts/GothamPro/GothamPro-Black.eot) format('eot'),
+        url(../fonts/GothamPro/GothamPro-Black.ttf) format('ttf'),
+        url(../fonts/GothamPro/GothamPro-Black.woff) format('woff');
+}
+
+@font-face {
+    font-family: Malik Trial;
+    src: url(../fonts/MalikTrial/MalikTrial-Bold.ttf);
+}
+
+
+
+
+/*container*/
+
+.container{
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+
+/*header*/
+
+.header{
+    width: 100%;
+    max-width: 1440px;
+    height: 1024px;
+    margin: 0 auto;;
+    position: relative;
+    background-color: #E5E5E5;
+    overflow: hidden;
+    padding-top: 34px;
+    justify-content: center ;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    width: 1657px;
+    height: 1657px;
+    left: 492px;
+    top: -254px;
+    border-radius: 50%;
+    background: #FFC850;
+    z-index: 1;
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+
+.header__title{
+    width: 135px;
+}
+
+.header__subtitle {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 300;
+    font-size: 10px;
+    color: #8B8A8B;
+}
+
+
+/* .header__introMainPart{
+    width: 100%;
+    max-width: 1150px;
+    position: relative;
+    z-index: 1000;
+} */
+
+
+.header__introMainPart{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 600px;
+}
+
+.header__introInner {
+    display: flex;
+    justify-content: center;
+}
+.header__introPhotos {
+    display: flex;
+    align-items: center;
+}
+
+.header__introFirstPhotoText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    padding: 18px 27px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    
+}
+
+
+
+.firstPhotoText {
+    text-align: center;
+    background: linear-gradient(133.21deg, #F7C3DC 25.78%, rgba(246, 164, 93, 0.85307) 31.17%, #EE7787 42.83%, #A95EA1 52.58%, #273067 62.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 11px;
+    line-height: 10.87px;
+    font-family: 'Avenir Next Cyr';
+}
+
+.header__introSecondPhotoText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 101.74px;
+    height: 101.74px;
+    border-radius: 50%;
+    padding: 18px 27px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-left: 13px;
+}
+
+.secondPhotoText {
+    font-size: 11px;
+    text-align: center;
+    background: linear-gradient(133.21deg, #F7C3DC 25.78%, rgba(246, 164, 93, 0.85307) 31.17%, #EE7787 42.83%, #A95EA1 52.58%, #273067 62.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Avenir Next Cyr';
+}
+
+.header__introTexts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 54px;
+}
+
+.header__introTitle {
+    font-size: 55px;
+    font-weight: 900;
+    font-family: 'Gotham Pro';
+    -webkit-text-stroke: 2px #FFFFFF;
+    color: transparent;
+    line-height: 1.2;
+    text-align: left;
+    width: 534px;
+}
+.header__intoSubtitle {
+    font-size: 14px;
+    color: #605E5E;
+    font-family: 'Avenir Next Cyr';
+    text-align-last: left;
+    line-height: 1.2;
+    width: 300px;
+    letter-spacing: 0.1em;
+}
+
+.header__footerText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*nav*/
+
+
+.nav__button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: transparent;
+    color: #52CAB6;
+    padding: 12px 34px;
+    border: 2px solid #52CAB6;
+    border-radius: 19.5px;
+    transition: color .2s linear;
+    transition: background-color .2s linear;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-right: 28px;
+
+}
+
+.nav__button:hover{
+    background-color: #52CAB6;
+    color: #FFFFFF;
+}
+
+/*searchButton*/
+
+
+
+
+
+
+/*intro body*/
+.mainpage {
+    width: 1440px;
+    height: 1382px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 28px;
+    position: relative;
+}
+
+
+/*city*/
+
+.city {
+    font-size: 13px;
+    font-family: Malik Trial;
+    font-weight: 700;
+    color: #605E5E;
+    display: flex;
+    align-items: center;
+}
+.city::after {
+    content: "";
+    display: inline-block;
+    border: solid #605E5E;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.searchbar {
+    position: relative;
+    width: 476px;
+    height: 37px;
+    border-radius: 23.5px;
+    text-indent: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);;
+}
+
+
+.buttonSubmit {
+    position: absolute;
+    background: none;
+    left: 60.4%;
+    transform: translateY(-75%);
+}
+.button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: transparent;
+    color: #52CAB6;
+    padding: 12px 34px;
+    border: 2px solid #52CAB6;
+    border-radius: 19.5px;
+    transition: color .2s linear;
+    transition: background-color .2s linear;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-right: 28px;
+}
+
+.button:hover {
+    background-color: #52CAB6;
+    color: #FFFFFF;
+}
+
+
+
+/*photos*/
+
+.mainpagePhoto {
+    margin-top: 27px;
+    position: absolute;
+    left: 0;
+}
+
+.mainpageWorks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 482px;
+    margin-right: 210px;
+    margin-left: 214px;
+}
+
+.works {
+    height: 290px;
+    background: #E5E5E5;
+    border-radius: 18px;
+
+}
+
+.work {
+    font-family: 'Avenir Next Cyr';
+    text-align: center;
+    margin-top: 21px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+.others {
+    margin-top: 55px;
+    font-family: 'Avenir Next Cyr';
+    text-align: center;
+}
+
+.others__items {
+    display: flex;
+    justify-content: center;
+}
+
+.items {
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+
+.items::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 3px;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background-color: #0AE7B2;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.items:hover::after {
+    opacity: 1;
+}
+
+.showAll {
+    margin-top: 42px;
+    text-align: center;
+}
+
+#expandBtn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: transparent;
+    color: #52CAB6;
+    padding: 12px 34px;
+    border: 2px solid #52CAB6;
+    border-radius: 19.5px;
+    transition: color .2s linear;
+    transition: background-color .2s linear;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-right: 28px;
+}
+
+#expandBtn:hover{
+    background-color: #52CAB6;
+    color: #FFFFFF;
+}
+
+.list-container {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px
+}
+
+/* .firstColumn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.secondColumn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.thirdColumn{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+.lastColumn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    
+} */
+
+.columnItems {
+    position: relative;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.columnItems::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 3px;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background-color: #0AE7B2;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.hidden{
+    display: none;
+}
+
+.columnItems:hover::after {
+    opacity: 1;
+}
+
+.hiddenAll {
+    text-align: center;
+}
+
+#collabseBtn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: transparent;
+    color: #52CAB6;
+    padding: 12px 34px;
+    border: 2px solid #52CAB6;
+    border-radius: 19.5px;
+    transition: color .2s linear;
+    transition: background-color .2s linear;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-right: 28px;
+}
+
+#collabseBtn:hover {
+    background-color: #52CAB6;
+    color: #FFFFFF;
+}
+
+
+
+
+.frames {
+    width: 1440px;
+    height: 996px;
+    margin: 0 auto;
+    background: #FAF9F9;
+    padding-top: 237px;
+}
+
+.frames__items {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.frame__text {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+    color: #939292;
+    line-height: 1.1;
+}
+
+
+
+.frameInformation {
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 328px;
+    height: 483px;
+    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 102px;
+    margin-left: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2%;
+}
+
+.informationPhoto {
+    width: 150px;
+    height: 123px;
+    margin-top: 105px;
+    margin: 0 auto;
+}
+
+.informationTitle {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 700;
+    color: #605E5E;
+    font-size: 19px;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 38px;
+    line-height: 1.2;
+}
+
+
+.informationText {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.5;
+    text-align: left;
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+.aboutTeamWork {
+    width: 1440px;
+    height: 857px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding-top: 253px;
+}
+
+.teamWorkItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teamWorkTexts {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.relyTeam {
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Avenir Next Cyr';
+    line-height: 1.2;
+    color: #474545;
+}
+
+.createTeam {
+    font-family: 'Avenir Next Cyr';
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 40px;
+    color: #939292;
+    line-height: 1.5;
+
+}
+
+.advantages {
+    display: flex;
+}
+
+.advantage {
+    margin-right: 50px;
+    text-align: center;
+}
+
+.advantageIMG {
+    width: 111px;
+    height: 112px;
+}
+
+.advantageText {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+    font-size: 13px;
+    width: 210px;
+    letter-spacing: 0.056em;
+    margin-top: 22px;
+}
+
+.footer {
+    width: 1440px;
+    height: 201px;
+    margin: 0 auto;
+    background: #454545;
+}
+
+.footer__items{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Avenir Next Cyr';;
+}
+
+.footer__link {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+a.nav__items{
+    font-weight: 500;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 83px;
+}
+.footerNavItems {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.nav__items{
+    color: #FFFFFF;
+    margin-top: 10px;
+    
+}
+.socialMediaText {
+    color: #FFFFFF;
+}
+.social {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
